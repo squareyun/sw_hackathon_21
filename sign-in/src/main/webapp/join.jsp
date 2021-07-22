@@ -3,6 +3,7 @@
 <%@page import="javax.sql.*" %>
 <%@page import="javax.naming.*" %>
 <%@page import="java.sql.*" %>
+<%@page import="login_check.*"%>
  
 <%
 	request.setCharacterEncoding("UTF-8");
@@ -17,30 +18,18 @@
  
 	PreparedStatement pstmt=null;
 
-	String dbid = "root";
-	String pw = "wnsqo218";
-	String port = "3306";
-	String dbname = "test";
-	String timezone = "serverTimezone=UTC";
-	
-	try{
-		String query = "jdbc:mysql://localhost:" + port + "/" + dbname + "?" + "timezone";
-		Class.forName("com.mysql.jdbc.Driver");
-		Connection conn = DriverManager.getConnection(query, dbid, pw);
-		
-		String sql = "select id from test1";
-		
-		PreparedStatement pstmt2 = conn.prepareStatement(sql);
-		ResultSet rs = pstmt2.executeQuery();
-			
-		while(rs.next()){
-			if(rs.getString("id").equals(id)){
-				out.println("ID가 중복됩니다.");
-				return;
-			}
-		}
+	if(ID_Check.id_check(id)){
+		out.println("<script>");
+		out.println("alert('아이디가 중복됩니다. 다른 아이디를 사용해주세요')");
+		out.println("location.href = 'register.html'");
+		out.println("</script>");
+		return;
+	}
 	    
-	    pstmt=conn.prepareStatement("Insert into test1 values(?,?,?,?,?,?,?,?)");
+	try{
+		Connection conn = DBUtil.getMySQLConnection();
+		
+		pstmt=conn.prepareStatement("Insert into test1 values(?,?,?,?,?,?,?,?)");
 	    pstmt.setString(1,id);
 	    pstmt.setString(2,password);
 	    pstmt.setString(3,name);
@@ -52,12 +41,16 @@
 
 	    pstmt.executeUpdate(); 
 	    out.println("회원가입이 완료 되었습니다.");
-	    }
+	}
+	catch (SQLException e){
+		e.printStackTrace();
+	}
+	    
 	catch(Exception e){ 
 			e.printStackTrace(); 
 			out.println("member 테이블에 새로운 레코드 추가에 실패했습니다.");
 			out.println(e);
-		}
+	}
 	
 %>    
     
