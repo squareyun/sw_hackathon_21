@@ -27,6 +27,18 @@
 		String query = "jdbc:mysql://localhost:" + port + "/" + dbname + "?" + "timezone";
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection conn = DriverManager.getConnection(query, dbid, pw);
+		
+		String sql = "select id from test1";
+		
+		PreparedStatement pstmt2 = conn.prepareStatement(sql);
+		ResultSet rs = pstmt2.executeQuery();
+			
+		while(rs.next()){
+			if(rs.getString("id").equals(id)){
+				out.println("ID가 중복됩니다.");
+				return;
+			}
+		}
 	    
 	    pstmt=conn.prepareStatement("Insert into test1 values(?,?,?,?,?,?,?,?)");
 	    pstmt.setString(1,id);
