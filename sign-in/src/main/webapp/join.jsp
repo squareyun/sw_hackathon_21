@@ -29,7 +29,7 @@
 	try{
 		Connection conn = DBUtil.getMySQLConnection();
 		
-		pstmt=conn.prepareStatement("Insert into test1 values(?,?,?,?,?,?,?,?)");
+		pstmt=conn.prepareStatement("Insert into student_db values(?,?,?,?,?,?,?,?)");
 	    pstmt.setString(1,id);
 	    pstmt.setString(2,password);
 	    pstmt.setString(3,name);

@@ -5,7 +5,7 @@ public class ID_Check {
 	public static boolean id_check(String id) {
 		Connection conn = DBUtil.getMySQLConnection();
 		try{
-			String sql = "select id from test1";
+			String sql = "select id from student_db";
 			
 			PreparedStatement pstmt = conn.prepareStatement(sql);
 			ResultSet rs = pstmt.executeQuery();

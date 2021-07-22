@@ -7,13 +7,13 @@ public class DBUtil {
 		
 		try {
 			String dbid = "root";
-			String pw = "wnsqo218";
+			String pw = "qwerty!@#$%";
 			String port = "3306";
-			String dbname = "test";
+			String dbname = "knuniverse";
 			String timezone = "serverTimezone=UTC";
 			
 			Class.forName("com.mysql.jdbc.Driver");
-			String url = "jdbc:mysql://localhost:" + port + "/" + dbname + "?" + timezone;
+			String url = "jdbc:mysql://125.185.173.147:" + port + "/" + dbname + "?" + timezone;
 			conn = DriverManager.getConnection(url, dbid, pw);
 		}
 		catch(ClassNotFoundException e) {

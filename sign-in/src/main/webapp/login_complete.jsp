@@ -22,7 +22,7 @@
 	try{
 		Connection conn = DBUtil.getMySQLConnection();
 		
-		String sql = "select * from test1 where id = ?";
+		String sql = "select * from student_db where id = ?";
 		PreparedStatement pstmt=conn.prepareStatement(sql);
 		
 		pstmt.setString(1, id);
