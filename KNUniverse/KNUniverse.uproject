@@ -1,0 +1,16 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{DF37DE1B-42DB-EC2D-69DA-159431D0C420}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "KNUniverse",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	]
+}
