@@ -40,7 +40,11 @@
 	    pstmt.setString(8,email2);
 
 	    pstmt.executeUpdate(); 
-	    out.println("회원가입이 완료 되었습니다.");
+	    
+	    out.println("<script>");
+	    out.println("alert('회원가입이 완료 되었습니다.')");
+	    out.println("location.href = 'login.html'");
+		out.println("</script>");
 	}
 	catch (SQLException e){
 		e.printStackTrace();

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta charset="EUC-KR">
+<title>로그인</title>
+	<link rel="stylesheet" type="text/css" href="register.css">
+</head>
+<body>
+	<h1>로그인</h1>
+	<form class="login" method= "post" name = "login" action= "login_complete.jsp">
+        <div class="site1">
+            아이디 입력
+            <input name="id" id= "form_box" type= "text" maxlength= "20">
+        </div>
+
+        <div class="site2">
+            비밀번호 입력
+            <input name="password" id="form_box" type= "password" maxlength = "20">
+        </div>
+        <center>
+	        <input type ="submit" value ="로그인">
+	        <input type = "button" value="회원가입" onclick = "location.href = 'register.html'">
+	    </center>
+   </form>
+</body>
+</html>
