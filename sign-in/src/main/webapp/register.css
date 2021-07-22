@@ -1,0 +1,64 @@
+		.register{
+			width: 500px;
+			height: 500px;
+			padding: 50px 100px 110px 100px;
+			border: 1px solid;
+			margin: auto;
+		}
+		.login{
+			width: 500px;
+			height: 200px;
+			padding: 50px 100px 110px 100px;
+			border: 1px solid;
+			margin: auto;
+		}
+		h1{
+			text-align: center;
+			color: gray;
+		}
+		#form_box{
+			width: 240px;
+			height: 30px;
+			padding-left: 10px;
+			margin-right: 120px;
+			margin-bottom: 10px;
+			float: right;
+		}
+		.main_commom{
+			width: 170px;
+			height: 35px;
+			float: left;
+		}
+		.site1{
+			height: 70px;
+			margin-bottom: 10px;
+		}
+    		   .site2{
+			height: 110px;
+			margin-bottom: 10px;
+		}
+     		#em{
+			width: 150px;
+			height: 30px;
+			margin-left: 75px;
+		}
+		#em2{
+			width: 160px;
+			height: 40px;
+		}
+		.university{
+			height: 35px;
+			width: 150px;
+			margin-left: 85px;
+		}
+		.major{
+			margin-left: 10px;
+			height: 30px;
+			width: 200px;
+		}
+		.ub{
+			width: 300px;
+			height: 50px;
+			border: 1px solid;
+			margin-left: 100px;
+		}
