@@ -26,6 +26,8 @@ KNUniverse는 경북대학교 메타버스 플랫폼이다.
 # 2. 개발 환경
 
 # 3. 구현 내용
+![image](https://user-images.githubusercontent.com/33932392/126698620-622ddb97-3894-4bf1-bf2e-b9a7b72b8495.png)
+
 
 # 4. 실행 방법
 
