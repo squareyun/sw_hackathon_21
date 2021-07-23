@@ -45,16 +45,17 @@ Content 폴더를 구글 드라이브에서 다운받고 KNUniverse.uproject과 
 Content 폴더 링크: https://drive.google.com/drive/folders/1BRnaMirgBXk2C3yeEXpQyAY3pY5nRc-i?usp=sharing
 
 # 4. 실행 방법
-https://github.com/squareyun/sw_hackathon_21/releases 에 있는압축파일을 풀고, 명령 프롬프트를 이용하여 프로그램을 실행하여야 한다.
-KNUniverse.exe KNU?Listen -game 명령어를 입력하면 게임의 서버를 실행할 수 있다.
-서버는 일반적인 클라이언트와 비슷하게 동작하는데, 로그인 과정이 없고 대화 기능을 사용할 수 없다.
+https://github.com/squareyun/sw_hackathon_21/releases 에 있는 압축파일을 풀고, 명령 프롬프트를 이용하여 프로그램을 실행하여야 한다.
 
-KNUniverse.exe 서버주소 -game 을 입력하여 클라이언트를 실행할 수 있다.
-로컬에서 실행하기 위해서는 KNUniverse.exe 127.0.0.1 -game 을 입력하여 실행한다.
+
+```KNUniverse.exe KNU?Listen -game``` 명령어를 입력하면 게임의 서버를 실행할 수 있다. 서버는 일반적인 클라이언트와 비슷하게 동작하는데, 로그인 과정이 없고 대화 기능을 사용할 수 없다.  
+
+```KNUniverse.exe 서버주소 -game``` 을 입력하여 클라이언트를 실행할 수 있다.  
+로컬에서 실행하기 위해서는 ```KNUniverse.exe 127.0.0.1 -game``` 을 입력하여 실행한다.
 
 회원가입 버튼을 눌러 가입을 진행하고, 회원 등록한 아이디와 패스워드를 입력하고 로그인 버튼을 눌러 접속한다.  
 
-게임 화면에서 접속한 사람들과의 전체 대화가 가능한데, TAB key를 눌러 채팅창에 포커스를 맞출 수 있고 빈 채팅창에 ENTER key를 한 번 누르면 움직일 수 있다.
+게임 화면에서 채팅창을 이용해 접속한 사람들과의 전체 대화가 가능하다. TAB key를 눌러 채팅창에 포커스를 맞출 수 있고 빈 채팅창에 ENTER key를 한 번 누르면 움직일 수 있다.
 
 # 5. 시연 영상
 
